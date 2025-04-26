@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная — VitalCore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* Центрируем контент в шапке */
+      align-items: center;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px; /* Ограничиваем максимальную ширину */
+      width: 100%;
+    }
+
+    .logo-img {
+      width: 180px; /* Логотип теперь больше */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #e74c3c;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #777;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .footer-layout {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .footer-columns {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #e74c3c;
+    }
+
+    .subscribe-btn {
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Мобильная версия */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-content nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.125rem;
+      }
+
+      .footer-layout {
+        flex-direction: column;
+      }
+
+      .social-icons {
+        margin-top: 15px;
+      }
+    }
+
+    /* Очень маленькие экраны */
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .footer-layout {
+        flex-direction: column;
+      }
+
+      .footer-columns div {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-icons">
+        <a href="#"><img class="vk" src="img/vk.webp" alt="VK"></a>
+        <a href="#"><img src="img/sferum.jpg" alt="Sferum"></a>
+        <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Энергия жизни в каждом движении</h2>
+      <p>VitalCore — это твой центр фитнеса, силы и восстановления. Онлайн и офлайн тренировки, нутрициология и поддержка 24/7.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-layout">
+        <div id="map" style="width: 300px; height: 200px; border-radius: 8px; border: 1px solid #ccc;"></div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Email: info@vitalcore.ru</p>
+          </div>
+          <div class="footer-column">
+            <h4>Быстрые ссылки</h4>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Документы</h4>
+            <p><a href="#">Политика конфиденциальности</a></p>
+            <p><a href="#">Пользовательское соглашение</a></p>
+          </div>
+        </div>
+      </div>
+      <p>© 2025 VitalCore. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(function () {
+      const map = new ymaps.Map("map", {
+        center: [55.7558, 37.6173],
+        zoom: 10,
+        controls: []
+      });
+
+      const placemark = new ymaps.Placemark([55.7558, 37.6173], {
+        hintContent: 'Наш офис',
+        balloonContent: 'VitalCore — добро пожаловать!'
+      });
+
+      map.geoObjects.add(placemark);
+    });
+  </script>
+</body>
+</html>
