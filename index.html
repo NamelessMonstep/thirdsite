@@ -7,6 +7,138 @@
 </title>
     <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 1.2em; /* Увеличиваем размер шрифта */
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0; /* Увеличиваем отступы */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 70px; /* Задайте нужный размер логотипа */
+            height: auto; /* Сохраняем пропорции */
+            margin-right: 10px; /* Отступ между логотипом и текстом */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em; /* Увеличиваем размер заголовка */
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px; /* Увеличиваем отступы между пунктами меню */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px; /* Увеличиваем внутренние отступы */
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2em; /* Увеличиваем размер подзаголовка */
+        }
+
+        .feedback-form {
+            margin-top: 30px; /* Увеличиваем отступ сверху */
+            padding: 30px; /* Увеличиваем внутренние отступы формы */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+       .feedback-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2em; /* Увеличиваем размер шрифта для меток */
+        }
+
+        .feedback-form select,
+        .feedback-form textarea {
+            width: calc(100% - 20px);
+            padding: 15px; /* Увеличиваем внутренние отступы полей ввода */
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .feedback-form button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 15px 20px; /* Увеличиваем отступы кнопки */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #34495e;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0; /* Увеличиваем отступы подвала */
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px; /* Увеличиваем максимальную ширину подвала */
+            margin: auto;
+        }
+.social-icon {
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        .social-icon:hover {
+            color: #3498db; /* Цвет при наведении */
+        }">
+            
+        </style>
 </head>
 <body>
     <header>
@@ -54,8 +186,6 @@
             </form>
         </section>
     </main>
-
-> Паровоз:
 <label for="comment">Ваш комментарий:</label>
                 <textarea id="comment" name="comment" rows="4" placeholder="Ваши пожелания и замечания..."></textarea>
     </main>
